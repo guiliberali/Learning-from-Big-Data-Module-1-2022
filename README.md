@@ -12,11 +12,11 @@
 
 ```
 .
-├── README.md             # this readme file
-├── intro to R markdown  # A survival guide to get you familiar with Rmarkdown
-└── lectures                     # R markdown files with the materials used in our sessions 
-└── assignment 1            # R markdown file for the assignment of module 1 
-└── data                           # All data files used in module 1, including assignment, lectures and tutorials
+├── README.md            # this readme file
+├── intro to R markdown  # a survival guide to get you familiar with Rmarkdown
+└── lectures             # a markdown files with the materials used in our sessions 
+└── assignment 1         # the markdown file for the assignment of module 1 
+└── data                 # all data files used in module 1, including data for the assignment, lectures, and tutorials
 
 ```
 
