@@ -3,9 +3,8 @@
 ## README content
 
 * [Repository content](#repository-content)
-* [Requirements](#requirements)
-* [Lecture materials](#lecture-materials)
-* [Module 1](#module-1) 
+* [Lecture materials for Module 1](#lecture-materials)
+
   
 <!-- vim-markdown-toc -->
 
@@ -14,18 +13,17 @@
 ```
 .
 ├── README.md          # this readme file
-├── tutorial 0         # tutorial to get you familiar with Rmarkdown
-└── source             # Rmarkdown files
+├── Intro to R Markdown  # A survival guide to get you familiar with Rmarkdown
+└── Session 1          # R markdown file with the materials used in session 1   
+└── Session 2          # R markdown file with the materials used in session 2   
+└── Session 3          # R markdown file with the materials used in session 3   
+└── Assignment 1          # R markdown file for the assignment of module 1 
+
 ```
 
-Please consider the following instructions and the material in this repository carefully. The repository content is designed to make participation in Learning from Big Data as easy and enjoyable for you as possible.
+Please consider the following instructions and the material in this repository carefully. The repository content is designed to make participation in Learning from Big Data as easy and enjoyable for you as possible. The content of this repo is being continuously updated before the first day of classes. 
 
-## Requirements
-
-1. R studio 
-
-
-In the lectures, we will use R markdown to illustrate implementation-related key points. The files will be published in this repository ahead of the lecture. Please make sure that you can execute the markdown before joining the class so you can easily follow the coding parts in the lectures.
+In the lectures, we will use R to illustrate implementation-related key points. The files will be published in this repository ahead of the lecture. Please make sure that you can execute the markdown file before joining the class so you can easily follow the coding parts in the lectures.  
 
 For the homework assignments, use RMarkdown
 
@@ -34,9 +32,9 @@ For the homework assignments, use RMarkdown
 
 ### Module 1
 ```
-- Lecture 01-1: Machine Learning foundations and NLP (folder/file here)
-- Lecture 01-2: Supervised Learning with naive Bayes classifier] (folder/file here)
-- Lecture 01-3: Unsupervised learning with LDA (folder/files here)
-- Tutorial Assignment 1  (https://github.com/guiliberali/LfBD )
+- Lecture 01-1: Machine Learning foundations and NLP (coming soon :) )
+- Lecture 01-2: Supervised Learning with naive Bayes classifier] (coming soon :) )
+- Lecture 01-3: Unsupervised learning with LDA  (coming soon :) )
+- Tutorial Assignment 1  (coming soon :) )
  ```
 
