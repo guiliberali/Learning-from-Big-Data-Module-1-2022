@@ -167,7 +167,7 @@ The following is an example of how to make a plot in Rmarkdown. We use a dataset
 ```{r }
 
 # Reads in the csv as an R dataframe
-df_titanic <- read.csv('titanic.csv')
+df_titanic <- read.csv('../data/titanic.csv')
 
 
 # create ggplot object of histogram of the age of passengers
