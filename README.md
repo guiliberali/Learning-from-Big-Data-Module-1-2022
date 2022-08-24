@@ -30,10 +30,10 @@ For the homework assignments, use RMarkdown.
 
 ## Course Preparation  
 
-```
+
 - [Introduction to R and R markdown](introduction-to-R-markdown/Intro-to-RMarkdown.pdf)
 
- ```
+ 
  ## Lecture materials
 
 ```
