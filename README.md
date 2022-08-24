@@ -1,6 +1,4 @@
-# Big Data Module 1
-
-GitHub Repository for Module 1 of Course  "Learning from Big Data"
+# GitHub Repository for Module 1 of Course  "Learning from Big Data"
 
 ## README content
 
