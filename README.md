@@ -3,7 +3,7 @@
 ## README content
 
 * [Repository content](#repository-content)
-* [Lecture materials for Module 1](#lecture-materials)
+* [Course Preparation for Module 1](#Course-Preparation-for-Module-1)
 * [Lecture materials for Module 1](#lecture-materials)
 
   
@@ -27,7 +27,7 @@ In the lectures, we will use R to illustrate implementation-related key points. 
 
 For the homework assignments, use RMarkdown.
 
-## Course Preparation
+## Course Preparation for Module 1
 
 ```
 - [Introduction to R and R markdown](introduction to R markdown/Intro-to-RMarkdown.pdf)
