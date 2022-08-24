@@ -1,0 +1,49 @@
+# Packets required for subsequent analysis. P_load ensures these will be installed and loaded.#
+if (!require("pacman")) install.packages("pacman")#
+pacman::p_load(dplyr,#
+               tidyr,#
+               ggplot2,#
+               reshape2,#
+               latex2exp#
+               )
+getwd()
+setwd("/Users/gui/Google Drive/_Teaching/Teach_BigData 2022/NLP data")
+dfReddit <- read.csv('../../NLP data/one-million-reddit-questions_short.csv')#[,-c(1,2)]
+dfReddit <- read.csv('one-million-reddit-questions_short.csv')
+dfReddit_for_processing$index <- 1:nrow(dfReddit_for_processing)#
+summary(dfReddit_for_processing)
+dfReddit_for_processing <- dfReddit %>% select(id, created_utc, title, score)#
+dfReddit_for_processing$index <- 1:nrow(dfReddit_for_processing)
+summary(dfReddit_for_processing)
+a=dfReddit_for_processing[1,]
+a
+a$title
+iconv(a$title, from = 'UTF-8', to = 'ASCII//TRANSLIT')
+a=dfReddit_for_processing[3,]
+iconv(a$title, from = 'UTF-8', to = 'ASCII//TRANSLIT')
+a=dfReddit_for_processing
+a$title=iconv(a$title, from = 'UTF-8', to = 'ASCII//TRANSLIT')
+a[1,3,]
+a[1:3,]
+a[1:10,]$title
+Reddit_data[1:3,]
+dfReddit_for_processing[1:3,]
+View(dfReddit_for_processing)
+View(dfReddit_for_processing[1:100,])
+Length(dfReddit_for_processing[1,])
+length(dfReddit_for_processing[1,])
+dfReddit_for_processing[1,]
+76_57
+76+57]
+76+57
+if (!require("pacman")) install.packages("pacman")#
+pacman::p_load(dplyr,#
+               tidyr,#
+               ggplot2,#
+               reshape2,#
+               latex2exp#
+               )#
+#
+setwd("/Users/gui/Google Drive/_Teaching/Teach_BigData 2022/NLP data")#
+# reads in full csv of Reddit dataset#
+reviews <- read.csv('../../NLP data/Reviews_short.csv')#[,-c(1,2)]
