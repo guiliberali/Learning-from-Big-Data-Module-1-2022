@@ -29,8 +29,8 @@ For the homework assignments, use RMarkdown.
  ## Lecture materials
 
 ```
-- Lecture 01-1: Machine Learning foundations and NLP (coming soon :) )
-- Lecture 01-2: Supervised Learning in NLP (coming soon :) )
+- Lecture 01-1: Machine learning foundations and natural language processing (coming soon :) )
+- Lecture 01-2: Supervised learning in NLP (coming soon :) )
 - Lecture 01-3: Unsupervised learning in NLP (coming soon :) )
 - Tutorial Assignment 1  (coming soon :) )
  ```
