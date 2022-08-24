@@ -1,9 +1,10 @@
 # GitHub Repository for Module 1 of Course  "Learning from Big Data"
 
 ## README content
+<!-- vim-markdown-toc GFM -->
 
 * [Repository content](#repository-content)
-* [Course Preparation for Module 1](#Course-Preparation-for-Module-1)
+* [Course Preparation](#Course-Preparation)
 * [Lecture materials for Module 1](#lecture-materials)
 
   
@@ -27,10 +28,10 @@ In the lectures, we will use R to illustrate implementation-related key points. 
 
 For the homework assignments, use RMarkdown.
 
-## Course Preparation for Module 1
+## Course Preparation  
 
 ```
-- [Introduction to R and R markdown](introduction to R markdown/Intro-to-RMarkdown.pdf)
+- [Introduction to R and R markdown](introduction-to-R-markdown/Intro-to-RMarkdown.pdf)
 
  ```
  ## Lecture materials
