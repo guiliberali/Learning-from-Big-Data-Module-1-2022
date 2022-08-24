@@ -30,8 +30,9 @@ For the homework assignments, use RMarkdown.
 
 ## Course Preparation  
 
+If you are not familiar with R markdown please go through this short tutorial.
 
-- [Introduction to R and R markdown](prep/Intro-to-RMarkdown.pdf)
+- [Introduction to R and R markdown](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/preparation/Intro-to-RMarkdown.pdf)
 
  
  ## Lecture materials
