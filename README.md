@@ -39,12 +39,10 @@ Greta Wackerbauer, our TA (learningbigdata22@gmail.com) will review and discuss 
  
  ## Lecture materials
  
- If you are not familiar with R markdown please go through this short tutorial in the following link.
+ Here are links to theory and practice (data/code) when applicable. You may need to use your school VPN to get access to published papers.
 
-- [Lecture 01-1: Machine learning foundations and natural language processing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 and https://github.com/guiliberali/Learning-from-Big-Data-Module-1/lectures/lecture 1/1.pdf)   
-
- 
-   
+Theory
+- [Lecture 01-1: Machine learning foundations and natural language processing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 and https://github.com/guiliberali/Learning-from-Big-Data-Module-1/lectures/lecture_1/1.pdf)   
 
 ```
 Code/data
