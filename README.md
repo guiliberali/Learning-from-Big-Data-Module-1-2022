@@ -4,7 +4,7 @@
 <!-- vim-markdown-toc GFM -->
 
 * [Repository content](#repository-content)
-* [Course Preparation](#Course-Preparation)
+* [Getting up to speed](#Getting-up-to-speed)
 * [Lecture materials for Module 1](#lecture-materials)
 
   
@@ -28,7 +28,7 @@ In the lectures, we will use R to illustrate implementation-related key points. 
 
 For the homework assignments, use RMarkdown.
 
-## Course Preparation  
+## Getting up to speed
 
 If you are not familiar with R markdown please go through this short tutorial in the following link.
 
