@@ -30,7 +30,8 @@ For the homework assignments, use RMarkdown.
 
 ## Course Preparation  
 
-If you are not familiar with R markdown please go through this short tutorial.
+If you are not familiar with R markdown please go through this short tutorial. 
+Greta Wackerbauer, our TA (learningbigdata22@gmail.com) will give a short tutorial on Rmarkdown on September 2 at 3pm (i.e., right after the first lecture) for the students that are not familiar with it. Feel free to attend if you would like to get some tips, but do make sure you first try to install R studio and R Markdown on your computer before the class.  
 
 - [Introduction to R and R markdown](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/preparation/Intro-to-RMarkdown.pdf)
 
