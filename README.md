@@ -45,11 +45,11 @@ Theory
 - Lecture 01-1: Machine learning foundations and natural language processing: [here](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [here](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/1.pdf)   
 
 
-Code/data: coming soon .
+Code/data: coming soon.
  
-- Lecture 01-1: code/data here 
-- Lecture 01-2: code/data here 
-- Lecture 01-3: code/data here  
+- Lecture 01-1: code/data will be here. 
+- Lecture 01-2: code/data will be here. 
+- Lecture 01-3: code/data will be here.  
 - Tutorial Assignment 1  
  
 
