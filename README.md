@@ -42,7 +42,7 @@ Greta Wackerbauer, our TA (learningbigdata22@gmail.com) will review and discuss 
 Here are links to theory and practice (data/code) when applicable. You may need to use your school VPN to get access to published papers.
 
 Theory
-- Lecture 01-1: Machine learning foundations and natural language processing: [here](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [here](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/lectures/Lecture_1/1.pdf )   
+- Lecture 01-1: Machine learning foundations and natural language processing: [here](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [here](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/1.pdf)   
 
 
 Code/data: coming soon .
