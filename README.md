@@ -37,12 +37,13 @@ If you are not familiar with R markdown please go through this short tutorial in
 Greta Wackerbauer, our TA (learningbigdata22@gmail.com) will review and discuss this short tutorial on Rmarkdown on September 2 at 3pm (i.e., right after the first lecture) and see if anyone has any questions on how to use R and RMarkdown. Feel free to attend if you would like to get some tips, but do make sure you first try to install R studio and R Markdown on your computer before the class.  
 
  
- ## Lecture materials
+## Lecture materials
  
- Here are links to theory and practice (data/code) when applicable. You may need to use your school VPN to get access to published papers.
+Here are links to theory and practice (data/code) when applicable. You may need to use your school VPN to get access to published papers.
 
 Theory
-- [Lecture 01-1: Machine learning foundations and natural language processing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 and https://github.com/guiliberali/Learning-from-Big-Data-Module-1/lectures/lecture_1/1.pdf)   
+- Lecture 01-1: Machine learning foundations and natural language processing https://journals.sagepub.com/doi/full/10.1177/0022242919873106 and https://github.com/guiliberali/Learning-from-Big-Data-Module-1/lectures/lecture_1/1.pdf    
+
 
 Code/data: coming soon :)
 ```
