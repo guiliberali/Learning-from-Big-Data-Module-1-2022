@@ -47,7 +47,7 @@ Theory
 
 Code/data: coming soon.
  
-- Lecture 01-1: code/data will be here. 
+- [Lecture 01-1: Introduction to ML and NLP](lectures/Lecture_1/session 1.Rmd)
 - Lecture 01-2: code/data will be here. 
 - Lecture 01-3: code/data will be here.  
 - Tutorial Assignment 1  
