@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.13)  28 AUG 2022 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.13)  28 AUG 2022 00:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**session-1.tex
-(./session-1.tex
+**session_1.tex
+(./session_1.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
@@ -532,8 +532,8 @@ File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 \BKM@id=\count123
 )) (/usr/local/texlive/2018/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2018/01/09 v 0.03 modify URL breaks
-) (./session-1.aux)
-\openout1 = `session-1.aux'.
+) (./session_1.aux)
+\openout1 = `session_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
 LaTeX Font Info:    ... okay on input line 111.
@@ -714,15 +714,15 @@ File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./4
 40px-Petal-sepal.jpg>]
 
-LaTeX Warning: File `session-1_files/figure-latex/inspect clusters-1.pdf' not f
+LaTeX Warning: File `session_1_files/figure-latex/inspect clusters-1.pdf' not f
 ound on input line 304.
 
-<session-1_files/figure-latex/inspect clusters-1.pdf, id=34, 439.6425pt x 285.0
+<session_1_files/figure-latex/inspect clusters-1.pdf, id=34, 439.6425pt x 285.0
 65pt>
-File: session-1_files/figure-latex/inspect clusters-1.pdf Graphic file (type pd
+File: session_1_files/figure-latex/inspect clusters-1.pdf Graphic file (type pd
 f)
-<use session-1_files/figure-latex/inspect clusters-1.pdf>
-Package pdftex.def Info: session-1_files/figure-latex/inspect clusters-1.pdf  u
+<use session_1_files/figure-latex/inspect clusters-1.pdf>
+Package pdftex.def Info: session_1_files/figure-latex/inspect clusters-1.pdf  u
 sed on input line 304.
 (pdftex.def)             Requested size: 439.64142pt x 285.0643pt.
 
@@ -732,15 +732,15 @@ Overfull \hbox (29.41699pt too wide) in paragraph at lines 304--305
 
 [3]
 
-LaTeX Warning: File `session-1_files/figure-latex/inspect clusters-2.pdf' not f
+LaTeX Warning: File `session_1_files/figure-latex/inspect clusters-2.pdf' not f
 ound on input line 316.
 
-<session-1_files/figure-latex/inspect clusters-2.pdf, id=44, 436.63126pt x 301.
+<session_1_files/figure-latex/inspect clusters-2.pdf, id=44, 436.63126pt x 301.
 125pt>
-File: session-1_files/figure-latex/inspect clusters-2.pdf Graphic file (type pd
+File: session_1_files/figure-latex/inspect clusters-2.pdf Graphic file (type pd
 f)
-<use session-1_files/figure-latex/inspect clusters-2.pdf>
-Package pdftex.def Info: session-1_files/figure-latex/inspect clusters-2.pdf  u
+<use session_1_files/figure-latex/inspect clusters-2.pdf>
+Package pdftex.def Info: session_1_files/figure-latex/inspect clusters-2.pdf  u
 sed on input line 316.
 (pdftex.def)             Requested size: 436.63019pt x 301.12425pt.
 
@@ -749,10 +749,10 @@ Overfull \hbox (26.40576pt too wide) in paragraph at lines 316--317
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
-[4 <./session-1_files/figure-latex/inspect clusters-1.pdf>] [5 <./session-1_fil
+[4 <./session_1_files/figure-latex/inspect clusters-1.pdf>] [5 <./session_1_fil
 es/figure-latex/inspect clusters-2.pdf>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
-(./session-1.aux)
+(./session_1.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 318.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
@@ -773,7 +773,7 @@ texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist
 /lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtk10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on session-1.pdf (5 pages, 275576 bytes).
+Output written on session_1.pdf (5 pages, 275570 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  102 compressed objects within 2 object streams

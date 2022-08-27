@@ -46,7 +46,7 @@ Theory
 
 
 Code/data: coming soon.
-- [Lecture 01-1](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/session 1.Rmd)
+- [Lecture 01-1](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/session_1.Rmd)
 - Lecture 01-2: code/data will be here. 
 - Lecture 01-3: code/data will be here.  
 - Tutorial Assignment 1  
