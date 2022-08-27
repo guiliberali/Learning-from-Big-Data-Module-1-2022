@@ -1,0 +1,87 @@
+---
+title: "Learning from Big Data: Module 1 - Natural Language Processing"
+author: "Session 1 - getting familiar with unsupervised learning "
+date: "7/18/2022"
+output:
+  pdf_document:
+    fig_caption: yes
+header-includes:
+  \usepackage{float}
+  \usepackage{booktabs} % To thicken table lines
+  \usepackage{unicode-math}
+
+---
+# Introduction
+This is a first, rather simple, script that has the goals of (1) getting you familiar with R (if you are not yet so) and (2) having you to black-box run a very simple unsupervised learning task.  In fact, you will be running what is arguably the simplest unsupervised learning task - a cluster analysis to group observations based on their similarity. For now, this is done by calling the function kmeans, from the library cluster (for documentation, see https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/kmeans) 
+
+In clustering, our goal is to maximize within-cluster homogeneity while making the clusters as different as possible; in other words, we wish to find the set of clusters such that observations within each cluster are as similar to each other as possible, while the clusters (more specifically, their means) are as different from each other as possible.  This is a classical example of unsupervised learning.
+
+For now, I will not ask you to "open the black box" and explain how this specific unsupervised algorithm works.  We will have time to explore the mechanics and details of specific NLP-appropriate supervised- and unsupervised- learning algorithms in the coming lectures and assignments. 
+   
+  
+# Loading libraries
+Before starting, make sure you have all the required libraries properly installed. 
+Simply run this chunk of code below.
+
+```{r, echo = T, results = 'hide', message=FALSE}
+
+# Packets required for subsequent analysis. P_load ensures these will be installed and loaded.
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(ClusterR, cluster  )
+
+```
+
+# 1. Load and prepare the data
+We will use the famous Iris dataset (https://en.wikipedia.org/wiki/Iris_flower_data_set) because it is simple, appropriate for classification, and comes built-in into any R installation. In the next tutorials, we will be loading the data ourselves, typically by reading csv files (using read.csv() ).
+
+![Sepal and Petal.Source: wikipedia](440px-Petal-sepal.jpg)
+
+The dataset has basically four variables: the length and width of the flower sepal and petal.  The goal is to use these variables to identify the species.
+
+````{r, Load data}
+data(iris);str(iris)
+iris_no_sp <- iris[, -5] # Remove the species label from the data
+````
+
+# 2. Fit a K-Means clustering model to the training dataset
+Now we will fit a clustering model using the K-Means algorithm. Note that this requires us to specify, a priori, the number of clusters we want the algorithm to produce. In this example case we set it at 3.
+````{r, run K-means }
+set.seed(123) # Setting seed
+kmeans.result <- kmeans(iris_no_sp, centers = 3, 	nstart = 20)
+````
+
+Here are some summary statistics in the three identified clusters :
+````{r, summary }
+kmeans.result
+```` 
+
+# 3. Identify the cluster for each observation
+````{r, id clusters}
+kmeans.result$cluster
+````
+
+# 4. How well does the classification do?
+To check the performance of our algorithm, we compare the clusters against the ground truth, i.e., the actual species, which is found in the variable 'species' in the dataset. Note that we have not used the variable 'species' so far; we only use the dimensions of the sepal and petal to create the clusters; now we will see how much hit and how much miss did we get in this task.
+```` {r, confusion matrix}
+confus <- table(iris$Species, kmeans.result$cluster)
+confus
+````
+
+Before we finalize, do note that this is an extremely simplified view of a classification task. In this course, we will discuss and practice important things that were not done in this first exercise, such as separation of samples for training and validation, and cross-validation. Thus, take these results above with a grain of salt. It is good to be skeptical since day 1 :) 
+
+# 5. Let's look at the clusters  
+
+````{r, inspect clusters}
+plot(iris_no_sp[c("Sepal.Length", "Sepal.Width")],
+     col = kmeans.result$cluster,main = "K-means with 3 clusters")
+ 
+y_kmeans <- kmeans.result$cluster
+clusplot(iris_no_sp[, c("Sepal.Length", "Sepal.Width")], 
+         y_kmeans, lines = 0, shade = TRUE, color = TRUE, labels = 2, 
+         plotchar = FALSE, span = TRUE, 	main = paste("Cluster iris"), 	
+         xlab = 'Sepal.Length', ylab = 'Sepal.Width')
+````					
+	  
+
+ 
+ 
