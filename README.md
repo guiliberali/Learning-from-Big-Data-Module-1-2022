@@ -45,7 +45,7 @@ Theory
 - Lecture 01-1: Machine learning foundations and natural language processing: [here](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [the Tamarin case can be downloaded here](https://www.thecasecentre.org/course/registerForCourse?ucc=C%2D4874%2D6030%2DSCH)   
 
 
-Code/data: coming soon.
+Code/data:  
 - [Lecture 01-1](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/session_1.Rmd)
 - Lecture 01-2: code/data will be here. 
 - Lecture 01-3: code/data will be here.  
