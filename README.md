@@ -26,7 +26,7 @@ The repository content is designed to make participation in Learning from Big Da
 
 In the lectures, we will use R to illustrate implementation-related key points. The files will be published in this repository ahead of the lecture. Please make sure that you can execute the markdown file before joining the class so you can easily follow the coding parts in the lectures.  
 
-For the homework assignments, use the structure presented in the final assignment RMarkdown file, which will be soon available.
+For the homework assignments, use the structure found in the final assignment RMarkdown file, which will be soon available.
 
 ## Getting up to speed
 
