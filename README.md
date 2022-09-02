@@ -39,7 +39,7 @@ If you are not familiar with R markdown please go through this short tutorial in
 Greta Wackerbauer, our TA (learningbigdata22@gmail.com) will review and discuss this short tutorial on Rmarkdown on September 2 at 3pm (i.e., right after the first lecture) and see if anyone has any questions on how to use R and RMarkdown. Feel free to attend if you would like to get some tips, but do make sure you first try to install R studio and R Markdown on your computer before the class.  
 
  
-## Lecture materials
+## Lecture materials for module 1
  
 Here are links to theory and practice (data/code) when applicable. You may need to use your school VPN to get access to published papers.
 
