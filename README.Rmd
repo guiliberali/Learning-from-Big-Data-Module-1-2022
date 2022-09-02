@@ -46,9 +46,12 @@ Theory
 
 
 Code/data:  
-- [Lecture 01-1](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/session_1.Rmd)
-- Lecture 01-2: code/data will be here. 
+- [Lecture 01-1](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/session_1.Rmd).
+
+-[Lecture 01-2](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx). Code/data will be here. 
+
 - Lecture 01-3: code/data will be here.  
+
 - Tutorial Assignment 1  
  
 
