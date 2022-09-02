@@ -52,7 +52,7 @@ THEORY
 . Lecture 01-3: Unsupervised Models and NLP: [Blei et al.'s classical paper on LDA](https://dl.acm.org/doi/10.5555/944919.944937) and  [Mikolov et al.'s classical paper on word2vec ](https://arxiv.org/abs/1301.3781).   
 
 
-CODE/DATA
+CODE
 
 .Lecture 01-1:
 [Unsupervised - example](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/unsupervised-example.Rmd) and 
@@ -61,7 +61,7 @@ CODE/DATA
 .Lecture 01-2: [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx). Code will be posted here. 
 
 
-.Lecture 01-3: code/data will be here.  
+.Lecture 01-3: code will be here.  
 
 .Assignment Module 1   
  
