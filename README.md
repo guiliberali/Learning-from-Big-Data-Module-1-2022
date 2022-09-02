@@ -1,7 +1,4 @@
----
-output:
-  html_document: default
-  pdf_document: default
+
 ---
 # GitHub Repository for Module 1 of Course  "Learning from Big Data"
 
