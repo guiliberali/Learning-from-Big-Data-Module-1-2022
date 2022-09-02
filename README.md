@@ -45,11 +45,11 @@ Here are links to theory and practice (data/code) when applicable. You may need 
 
 THEORY
 
-. Lecture 01-1: Machine learning foundations and natural language processing: [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [the Tamarin case can be downloaded here](https://www.thecasecentre.org/course/registerForCourse?ucc=C%2D4874%2D6030%2DSCH).   
+. Lecture 01-1: Machine learning foundations and natural language processing: [Berger et al. overview on text analytics in marketing](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [Datar and Bowler's Tamarin case](https://www.thecasecentre.org/course/registerForCourse?ucc=C%2D4874%2D6030%2DSCH).   
 
 . Lecture 01-2: Supervised Models and NLP: [Zacharski chapters 6 and 7 on NBC](http://guidetodatamining.com/) and [Hutto and Gilber's paper on VADER](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).   
 
-. Lecture 01-3: Unsupervised Models and NLP: [Blei et al. classical paper on LDA](https://dl.acm.org/doi/10.5555/944919.944937) and  [Mikolov et al.'s classical paper on word2vec ](https://arxiv.org/abs/1301.3781).   
+. Lecture 01-3: Unsupervised Models and NLP: [Blei et al.'s classical paper on LDA](https://dl.acm.org/doi/10.5555/944919.944937) and  [Mikolov et al.'s classical paper on word2vec ](https://arxiv.org/abs/1301.3781).   
 
 
 CODE/DATA
