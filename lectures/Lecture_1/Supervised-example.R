@@ -38,11 +38,12 @@ table(trainData$Class)
 # The author of this example dataset and code suggest using "down sample" or "up sample" to 
 # have the same number of cases. 
 # However, this can be a problematic approach. There are other approaches in the literature.
-# Furthermore, over-representation and under-representation of a group in a data is and
-# active area of research within the "fairness in machine learning" field, where the impact of
-# underrepresented minorities is a source of concern. For more and better solutions I recommend
-# exploring that literature and methods. This could also be a nice research question for your final assignment
-# For now I am keeping the original author's proposed method below (down sample) but please be aware of the discusse above.
+# Furthermore, over-representation and under-representation of a group in a dataset is an
+# active area of research within the "fairness in machine learning (FML)" field, where the impact of
+# underrepresented minorities in training is a source of concern. For more and better solutions I recommend
+# exploring that FML literature and methods. This could also be a nice research question for your final assignment in module 1.
+# For now, I am keeping the original author's proposed method below (i.e., down sample) but please be aware of the statistical 
+# and fairness issues mentioned above.
 set.seed(100)
 down_train <- downSample(x = trainData[, colnames(trainData) %ni% "Class"],
                          y = trainData$Class)
