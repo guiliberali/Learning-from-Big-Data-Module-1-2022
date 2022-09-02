@@ -56,10 +56,10 @@ THEORY
 CODE/DATA
 
 .Lecture 01-1:
-[Unsupervised - example](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/unsupervised-example.Rmd) 
+[Unsupervised - example](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/unsupervised-example.Rmd) and 
 [Supervised-example](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/Supervised-example.R)
 
-.Lecture 01-2: [NBC Cartoon](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx). Code will be here. 
+.Lecture 01-2: [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx). Code will be posted here. 
 
 
 .Lecture 01-3: code/data will be here.  
