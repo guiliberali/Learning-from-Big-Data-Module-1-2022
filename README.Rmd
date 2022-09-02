@@ -48,16 +48,16 @@ Here are links to theory and practice (data/code) when applicable. You may need 
 
 THEORY
 
-. Lecture 01-1: Machine learning foundations and natural language processing: [here](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [the Tamarin case can be downloaded here](https://www.thecasecentre.org/course/registerForCourse?ucc=C%2D4874%2D6030%2DSCH)   
+. Lecture 01-1: Machine learning foundations and natural language processing: [here](https://journals.sagepub.com/doi/full/10.1177/0022242919873106 ) and [the Tamarin case can be downloaded here](https://www.thecasecentre.org/course/registerForCourse?ucc=C%2D4874%2D6030%2DSCH).   
 
-. Lecture 01-2: Supervised Models and NLP: [here](http://guidetodatamining.com/  chapters 6 and 7) and  [here](https://ojs.aaai.org/index.php/ICWSM/article/view/14550)   
+. Lecture 01-2: Supervised Models and NLP: [chapters 6 and 7](http://guidetodatamining.com/) and  [here](https://ojs.aaai.org/index.php/ICWSM/article/view/14550).   
 
 
 CODE/DATA
 
-. [Lecture 01-1](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/session_1.Rmd).
+.Lecture 01-1: [Unsupervised - example](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/unsupervised-example.Rmd) and [Supervised - example](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/Supervised example.R)
 
-. [Lecture 01-2](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx). Code will be here. 
+.Lecture 01-2: [NBC Cartoon](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx). Code will be here. 
 
 
 . Lecture 01-3: code/data will be here.  
