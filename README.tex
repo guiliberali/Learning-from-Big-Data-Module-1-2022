@@ -1,0 +1,160 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\hypertarget{github-repository-for-module-1-of-course-learning-from-big-data}{%
+\section{GitHub Repository for Module 1 of Course ``Learning from Big
+Data''}\label{github-repository-for-module-1-of-course-learning-from-big-data}}
+
+\hypertarget{readme-content}{%
+\subsection{README content}\label{readme-content}}
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{repository-content}{Repository content}
+\item
+  \protect\hyperlink{Getting-up-to-speed}{Getting up to speed}
+\item
+  \protect\hyperlink{lecture-materials}{Lecture materials for Module 1}
+\end{itemize}
+
+\hypertarget{repository-content}{%
+\subsection{Repository content}\label{repository-content}}
+
+\begin{verbatim}
+.
+├── README.md            # this readme file
+├── preparation          # a survival guide to get you familiar with Rmarkdown
+└── lectures             # markdown files with the materials used in our sessions 
+└── assignment 1         # the markdown file for the assignment of module 1 
+└── data                 # all data files used in module 1, including data for the assignment, lectures, and tutorials
+\end{verbatim}
+
+The repository content is designed to make participation in Learning
+from Big Data as easy and enjoyable for you as possible. The content of
+this repo is being continuously updated until the first day of classes.
+
+In the lectures, we will use R to illustrate implementation-related key
+points. The files will be published in this repository ahead of the
+lecture. Please make sure that you can execute the markdown file before
+joining the class so you can easily follow the coding parts in the
+lectures.
+
+For the homework assignments, use the structure found in the final
+assignment RMarkdown file, which will be soon available.
+
+\hypertarget{getting-up-to-speed}{%
+\subsection{Getting up to speed}\label{getting-up-to-speed}}
+
+If you are not familiar with R markdown please go through this short
+tutorial in the following link.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/preparation/Intro-to-RMarkdown.pdf}{Introduction
+  to R and R markdown}
+\end{itemize}
+
+Greta Wackerbauer, our TA
+(\href{mailto:learningbigdata22@gmail.com}{\nolinkurl{learningbigdata22@gmail.com}})
+will review and discuss this short tutorial on Rmarkdown on September 2
+at 3pm (i.e., right after the first lecture) and see if anyone has any
+questions on how to use R and RMarkdown. Feel free to attend if you
+would like to get some tips, but do make sure you first try to install R
+studio and R Markdown on your computer before the class.
+
+\hypertarget{lecture-materials}{%
+\subsection{Lecture materials}\label{lecture-materials}}
+
+Here are links to theory and practice (data/code) when applicable. You
+may need to use your school VPN to get access to published papers.
+
+Theory - Lecture 01-1: Machine learning foundations and natural language
+processing:
+\href{https://journals.sagepub.com/doi/full/10.1177/0022242919873106}{here}
+and
+\href{https://www.thecasecentre.org/course/registerForCourse?ucc=C\%2D4874\%2D6030\%2DSCH}{the
+Tamarin case can be downloaded here}
+
+Code/data:\\
+-
+\href{https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/session_1.Rmd}{Lecture
+01-1}.
+
+-\href{https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx}{Lecture
+01-2}. Code/data will be here.
+
+\begin{itemize}
+\item
+  Lecture 01-3: code/data will be here.
+\item
+  Tutorial Assignment 1
+\end{itemize}
+
+\end{document}
