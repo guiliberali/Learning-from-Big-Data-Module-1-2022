@@ -1,5 +1,5 @@
 # Learning from Big Data 2023
-# This file was developed by Gui Liberali to illustrate how a form to implement sentiment and content NBC-based methods
+# This file was developed by Gui Liberali to illustrate how a way to implement sentiment and content NBC-based methods
 
 # Installation, based on the data available on the GitHub repo https://github.com/guiliberali/Learning-from-Big-Data-Module-1 
 #  - Input files read from the local clone of the GitHub repo (you need to adjust the setwd() line).
