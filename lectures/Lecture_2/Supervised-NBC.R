@@ -160,7 +160,7 @@ lexicon_content     <- as.character(likelihoods[ ,1] )
 
 # TO DO:  Locate a list of sentiment words that fits your research question. This is available from the literature. 
 #         For example, you may want to look just positive and negative (hence two dimensions) or you may want to 
-#         look at other sentiment dimensions, such as specific emotions (excitment, fear, etc.).  The list of 100
+#         look at other sentiment dimensions, such as specific emotions (excitement, fear, etc.).  The list of 100
 #         words with fake likelihoods for sentiment used below is not to be used in your assignment
 likelihoods_sentim <-read.csv2("./Big-Data-Module-1/data/lexicons/example_100 fake_likelihood_sentiment.csv",header=TRUE,
                                sep=",", quote="\"",dec=".",fill=FALSE)
