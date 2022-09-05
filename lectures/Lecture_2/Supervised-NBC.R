@@ -171,7 +171,7 @@ lexicon_sentiment <-  as.character(likelihoods_sentim$words )
 #---------------------------
 
 for (review_index in 1:TOT_REVIEWS) {  
-  if (round(review_index/100,0) ==review_index/100) { cat("Computing content of review #", review_index, "\n", sep="") } 
+  if (round(review_index/100,0) ==review_index/100) { cat("Computing sentiment of review #", review_index, "\n", sep="") } 
   prior_sent     <- c(PRIOR_SENT,1-PRIOR_SENT)   # Reset the prior as each review is looked at separately  
   text_review    <- as.character(Reviews_Raw$processed_text[review_index])
 
@@ -198,7 +198,7 @@ for (review_index in 1:TOT_REVIEWS) {
 #---------------------------
 
 for (review_index in 1: TOT_REVIEWS) {
-  if (round(review_index/100,0) ==review_index/100) { cat("Computing sentiment of review #", review_index, "\n", sep="") } 
+  if (round(review_index/100,0) ==review_index/100) { cat("Computing content of review #", review_index, "\n", sep="") } 
   if ( Reviews_Raw$full_text[review_index]!=""){
     text_review   <- as.character(Reviews_Raw$processed_text[review_index])
     
