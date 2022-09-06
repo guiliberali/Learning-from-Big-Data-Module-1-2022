@@ -1,8 +1,8 @@
 
 ---
 # Module 1 of Course  "Learning from Big Data"
-# GitHub Repository 
-# Prof. Gui Liberali
+## GitHub Repository 
+## Prof. Gui Liberali
 
 ## README content
 <!-- vim-markdown-toc GFM -->
