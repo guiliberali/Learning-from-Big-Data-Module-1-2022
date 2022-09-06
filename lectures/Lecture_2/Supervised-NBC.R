@@ -1,4 +1,4 @@
-# Learning from Big Data 2023
+# Learning from Big Data 2022
 # This file was developed by Gui Liberali to illustrate a way to implement sentiment and content NBC-based methods
 
 # Installation, based on the data available on the GitHub repo https://github.com/guiliberali/Learning-from-Big-Data-Module-1 
