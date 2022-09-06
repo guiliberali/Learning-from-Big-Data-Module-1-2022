@@ -409,8 +409,8 @@ QUESTION IX (optional). Using the VADER code you received in the lecture, comput
 Compare the performance of your NBC implementation (for sentiment) assuming that the VADER
 classification were the ground truth and then build the confusion matrix and computing 
 precision and recall. Note that we are now interested in understanding how much the two
-classifications (we are not implying that VADER is error-free, far from it). We are interested 
-in uncovering sources of systematic differences that can be attributed to the algorithms or 
+classifications differ and how, but we are not implying that VADER is error-free, far from it. 
+We are interested in uncovering sources of systematic differences that can be attributed to the algorithms or 
 lexicons. Do interpret your findings.
 
 ```{r, Computing VADER}

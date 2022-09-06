@@ -228,7 +228,7 @@ Processed_reviews <- Reviews_Raw
 View(Processed_reviews)
 
 # Saves the updated file, now including the sentiment and content/topic posteriors.
-write.csv(Processed_reviews,file="./output/TestProcessed_reviews.csv" , row.names = FALSE )
+write.csv(Processed_reviews,file="../output/TestProcessed_reviews.csv" , row.names = FALSE )
 
 #---------------------------
 # performance: Confusion matrix
@@ -268,7 +268,7 @@ for (review_index in 1: TOT_REVIEWS) {
 }  
 Processed_reviews <- Reviews_Raw
 View(Processed_reviews)
-write.csv(Processed_reviews,file="./output/VADER_Processed_reviews.csv" , row.names = FALSE )
+write.csv(Processed_reviews,file="../output/VADER_Processed_reviews.csv" , row.names = FALSE )
 
 #---------------------------
 # VADER vs. NBC comparison
