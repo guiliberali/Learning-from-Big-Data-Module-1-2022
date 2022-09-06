@@ -45,7 +45,7 @@ This tutorial has the following structure:
 \textcolor{red}{Before going further:} check that you have R, R markdown and tinytex correctly installed. Tutorial 0 provides instructions for doing so.
 
 # 1. General Guidelines
-Page length. The template has 8 pages. You are allowed to add 7 TO 10 pages, not including the appendix.
+Page length. The template has 8 pages. You are allowed to add 7 to 10 pages, not including the appendix.
 There is a limit of pages, but you have the possibility of using appendices, which are not limited in number of pages.  Use your pages wisely. For example, having a table with 2 rows and 3 columns that uses 50% (or even 25%) of a page is not really wise.  
 
 # 2. Research Question
@@ -132,7 +132,7 @@ Even if you are using the data at the review level, indicate how and why that is
 # 6. Supervised learning  -  the Naive Bayes classifier
 
 # 6.0 Load support functions and global parameters
-These two functions, Compute_posterior_sentiment and Compute_posterior_content, are called one time per review. These functions use the Bayes rule we saw in our session #2 to compute the posterior probabilities that the review is about each topic (in the first function) and  the posterior probability that the sentiment in the review is positive and/or negative (in the second function).
+These two functions, Compute_posterior_sentiment and Compute_posterior_content, are called one time per review. These functions use the Bayes rule we saw in our session #2 to compute the posterior probabilities that the review is about each topic (in the 2nd function) and  the posterior probability that the sentiment in the review is positive and/or negative (in the 1st function).
 ````{r, support functions}
 
 #  FUNCTIONS
