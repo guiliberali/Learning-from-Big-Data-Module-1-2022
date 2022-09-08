@@ -256,7 +256,7 @@ TOT_REVIEWS = length(Reviews_Raw[,1])
 QUESTION III. Create the content likelihoods based on the 3 lists of words below. Be explicit on the decisions you took in the process, and why you made those decisions (e.g., which smoothing approach you used).
 ````{r, creating content likelihoods}
 dictionary_storyline<-read.csv2("../data/lexicons/storyline_33k.txt", header = FALSE)  
-dictionary_accting <-read.csv2("../data/lexicons/acting_33k.txt", header = FALSE) 
+dictionary_acting <-read.csv2("../data/lexicons/acting_33k.txt", header = FALSE) 
 dictionary_visual <-read.csv2("../data/lexicons/visual_33k.txt", header = FALSE) 
 
 # ADD YOUR CODE HERE, replacing these fake likelihoods
