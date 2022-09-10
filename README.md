@@ -63,7 +63,7 @@ CODE
 [Supervised-example](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_1/Supervised-example.R)
 
 .Lecture 01-2: [Naive Bayes classifier - fundamentals - a cartoon version in Excel](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Cartoon_Example_NBC.xlsx) and
-[Supervised naive Bayes Classifier](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Supervised-NBC.R)
+[supervised naive Bayes Classifier](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Supervised-NBC.R)
 
 
 .Lecture 01-3: code will be here.  
