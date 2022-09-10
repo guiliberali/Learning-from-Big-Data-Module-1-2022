@@ -56,6 +56,7 @@ Advanced reading: On the optimality of naive Bayes - optional [here](https://git
 . Lecture 01-3: Unsupervised Models and NLP. [Blei et al.'s classical paper on LDA](https://dl.acm.org/doi/10.5555/944919.944937) and  [Mikolov et al.'s classical paper on word2vec ](https://arxiv.org/abs/1301.3781).   
 
 
+
 CODE
 
 .Lecture 01-1:
@@ -67,6 +68,8 @@ CODE
 
 
 .Lecture 01-3: code will be here.  
+
+
 
 ASSIGNMENT MODULE 1
 
