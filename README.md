@@ -67,7 +67,7 @@ CODE
 [supervised naive Bayes Classifier](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_2/Supervised-NBC.R)
 
 
-.Lecture 01-3: code will be here.  
+.Lecture 01-3:[unsupervised Latend Dirichlet Allocation and Word Embeddings - simple examples using packages](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/lectures/Lecture_3/session%203.Rmd )
 
 
 
