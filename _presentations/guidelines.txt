@@ -1,4 +1,5 @@
 The presentation is not graded, but I have noticed that the students that end up with the highest grades tend to be the ones who presented or used the presentation day as both a milestone and to fine tune their reports.
 
 
-During your presentation, you should assume everyone is familiar with the option 1 context so you do not have to spend time or expensive real estate (slides) to explain the context or the data in detail. Instead, use the time and slides to explain YOUR decisions: motivate them (why), describe them (what) and explain how. Then present your results so far.  Close with a slide of questions your may have. to present, push your presentation into the gitbhug folder "_presentations".
+During your presentation, you should assume everyone is familiar with the option 1 (movie reviews) so you do not have to spend your time or expensive real estate (slides) to explain the context or the data in detail. Instead, use the time and slides to explain YOUR decisions: motivate them (why), describe them (what) and explain how. Then present your results so far.  Close with a slide of questions your may have. We (me and your classmates) will focus on those questions.
+ 
