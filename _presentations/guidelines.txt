@@ -1,5 +1,41 @@
-The presentation is not graded, but I have noticed that the students that end up with the highest grades tend to be the ones who presented or used the presentation day as both a milestone and to fine tune their reports.
+The presentation is not graded, but I have noticed that the students that end up with the highest grades tend to be the ones who presented or used the presentation day both as a milestone and as a way to fine tune their reports.
 
 
-During your presentation, you should assume everyone is familiar with the option 1 (movie reviews) so you do not have to spend your time or expensive real estate (slides) to explain the context or the data in detail. Instead, use the time and slides to explain YOUR decisions: motivate them (why), describe them (what) and explain how. Then present your results so far.  Close with a slide of questions your may have. We (me and your classmates) will focus on those questions.
- 
+During your presentation, you should assume everyone is familiar with the option 1 (movie reviews) so you do not have to spend your time or expensive real estate (slides) to explain the context or the data you received. Instead, use the time and slides to explain YOUR decisions and choices: motivate them (why), describe them (what) and explain how. Then present your results you got at that point.  Close with a slide of questions your may have to us. We (me and your classmates) will focus on those questions.
+ 
+
+Each student will have 5-8 minutes to present, including the discussion. This means you should prepare a crisp and complete set of 5-6 slides that are self-explanatory so you do not have to read every word in them. When presenting, just give the main message in each slide; the necessary details and complete view should be in the slide for everyone to see.
+
+Thus, a possible structure could be something like this (feel free to change if you would like):
+
+
+Slide 0
+
+- Cover  with your name and a title based on your research question
+
+Slide 1
+
+- Research question: motivation (why) and what (the RQ itself in a clear sentence or two)
+
+- Data structure/aggregation/formatting  (if you need help, please refer to page 3 of the template)
+
+Slide 2
+
+- Your classifiers (NBC and others)
+
+Slide 3
+
+- Your constructed variables (mean and/or plot showing the distribution of content and sentiment for main variables you constructed) and confusion matrix for your classifier(s) if available
+
+Slide 4 and 5
+
+- Analysis needed to answer your RQ: DV, IV and results
+
+- (optional for the presentation) Forecasting tasks : BO prediction results
+
+Slide 5 or 6
+
+- Questions you may have
+
+
+
