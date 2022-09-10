@@ -27,7 +27,7 @@
 
 ```
 
-The repository content is designed to make participation in Learning from Big Data as easy and enjoyable for you as possible. The content of this repo is being continuously updated until the first day of classes. 
+The repository content is designed to make participation in Learning from Big Data as easy and enjoyable for you as possible. The content of this repo is being continuously updated until the last day of classes. 
 
 In the lectures, we will use R to illustrate implementation-related key points. The code files will be published in this repository ahead of the lecture. Please make sure that you can execute the code, and solve eventual challenges, before joining the class so you can easily follow the coding parts in the lectures.  
 
