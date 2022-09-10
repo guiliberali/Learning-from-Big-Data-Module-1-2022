@@ -60,7 +60,7 @@ Simply run this chunk of code below.
 
 ```{r, echo = T, results = 'hide', message=FALSE}
 
-# Packets required for subsequent analysis. P_load ensures these will be installed and loaded.
+# Required packages. P_load ensures these will be installed and loaded.
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tm, openNLP, nnet, dplyr, tidyr, ggplot2, reshape2,latex2exp)
 

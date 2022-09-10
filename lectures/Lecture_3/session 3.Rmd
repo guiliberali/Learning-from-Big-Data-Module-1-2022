@@ -1,0 +1,159 @@
+---
+title: "Learning from Big Data: Module 1 - Session 3"
+author: ""
+date: "9/9/2022"
+output:
+  pdf_document:
+    fig_caption: yes
+header-includes:
+  \usepackage{float}
+  \usepackage{booktabs} % To thicken table lines
+  \usepackage{unicode-math}
+
+---
+# Introduction
+This file illustrates LDA and word2vec using the review data.
+
+
+# 1.  Loading libraries
+Before starting the problem set, make sure you have all the required libraries properly installed. 
+Simply run this chunk of code below.
+
+```{r, echo = T, results = 'hide', message=FALSE}
+
+# Required packages. P_load ensures these will be installed and loaded.
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(tm, openNLP, nnet, dplyr, tidyr, ggplot2, reshape2,
+               latex2exp, topicmodels,word2vec,tokenizers)
+
+```
+
+# 2. Load the reviews
+```{r, load data}
+# Load the review data. Note that we are now using the fileEncoding parameter when
+#      calling read.csv() - this helps reading the review text correctly for further 
+#      processing (by correctly interpreting the non-ASCII symbols)
+Reviews_Raw <- read.csv('../data/reviews/Reviews_tiny.csv', fileEncoding="ISO-8859-1") 
+Reviews_Raw <- Reviews_Raw %>% 
+               select(movie_name,review_code,	reviewer,	review_date, num_eval,
+                      prob_sentiment,words_in_lexicon_sentiment_and_review, ratio_helpful,	
+                      raters,   
+                      prob_storyline,	prob_acting,	prob_sound_visual,
+                      full_text,	processed_text,
+                      release_date,	first_week_box_office,MPAA,	studio,	num_theaters )
+TOT_REVIEWS = length(Reviews_Raw[,1]) 
+
+
+# TO DO - replace here these fake likelihoods with your own content likelihood file
+likelihoods <- read.csv2("../data/likelihoods/example_100_fake_likelihood_topic.csv", 
+                         header=TRUE, sep = ",",quote="\"",dec=".",fill=FALSE)[,1:4]
+```
+
+Inspect list of words to be passed to LDA: 
+```{r, lexicon content}
+lexicon_content  <- as.character(likelihoods[ ,1] )
+str(lexicon_content)
+```
+ 
+
+
+# 3. Unsupervised Learning:  Latent Dirichlet Allocation (LDA)  
+
+```{r, Preparing data for LDA}
+ # Put reviews in corpus format
+corpus_review <- VCorpus(VectorSource(Reviews_Raw$processed_text)) 
+
+# Creates the document term matrix that will be passed to the LDA function
+dtm=DocumentTermMatrix(corpus_review, 
+                       control = list(stemming=FALSE,
+                                      language = "english",
+                                      removePunctuation=TRUE,
+                                      removeNumbers=TRUE,
+                                      dictionary=as.character(lexicon_content)) )
+
+
+str(dtm)
+
+```
+
+
+Next, we will set the LDA parameters. k is the number of topics we ask LDA to estimate. In supervised learning, we set that to 3. In this example, we arbitrarily set k at 10. Seed is for replicability (i.e., obtain the same random number every time the code is run). Burn-in and number of iterations are for convergence of the Markov chains in the Gibbs sampler (ask me for details if you want them - MCMC-based inference is outside of the scope of this course and not required for the assignment - just use the default values below.) In the unlikely case you have warnings re: not convergence, you can increase ITER to 2k or 4k.
+
+
+```{r, LDA parameters}
+# LDA parameters
+SEED=20080809 
+BURNIN = 1000 
+ITER = 1000
+k =10
+```
+Tip: choosing which k to use in LDA is a model selection problem. Typically, the best approach is to compute a model for each level of k, save the model log-likelihood (produced by applying the function logLik() to the model, stored in model_lda) and choosing the k that produced the  highest log-likelihood.
+
+Next, we will run the LDA and save the model. The model produced by LDA() is an object of class LDA (page 11 of https://cran.r-project.org/web/packages/topicmodels/topicmodels.pdf ). This class includes the topics, the log-likelihood, and a lot more. To extract these infos it is needed to use functions listed in page 2 of the said pdf, as shown in the code below.
+```{r, Computing LDA}
+#Create an LDA model using GIBBS sampling
+model_lda = LDA(dtm, k, method = "Gibbs", control = list(seed = SEED, burnin = BURNIN, iter = ITER) , mc.cores = 4)
+save(model_lda , file = paste("../output/LDA_model_" ,k,".RData" ,sep="")) 
+```
+
+Inspect posteriors.
+```{r, posterior}
+#posterior probabilities per document by topic
+posteriors_lda=posterior(model_lda)$topics
+str(posteriors_lda)
+posteriors_lda[review=999,]
+```
+
+Tip: for the data splits, mind the time. Best to train on a split that temporarily precedes the prediction split 
+
+  
+# 4. Unsupervised Learning:  word embeddings  
+
+Our word embedding example has three steps. First, run word2vec to train a model using the training data split. Second, it uses the trained model to analyze the prediction data split. Third, it uses the constructed variables to forecast box office.
+
+
+Step 1 - Training Step
+
+```{r, Run word2vec - training}
+x <-  Reviews_Raw$full_text
+x <- tolower(x)
+
+# TO DO: use a split of the data here (say 50%) instead of the entire dataset
+
+# number of topics in Word2Vec
+TOT_TOPICS_WORD2VEC <- 10
+
+# Train
+model<- word2vec(x = x, type = "cbow", dim = TOT_TOPICS_WORD2VEC, iter = 20)
+embedding <- as.matrix(model)
+``` 
+
+Step 2 -  Construct variables from word embeddings 
+```{r, Construct variables}
+
+# TO DO: Use the other split of the data here  (say 50%) instead of the entire dataset
+posteriors_w2v = matrix(0, nc=TOT_TOPICS_WORD2VEC, nr=TOT_REVIEWS)
+for (k in 1:TOT_REVIEWS )
+{
+   # 2.1 get a review  and tokenize it - identify the words, separately
+   tokenized_review <- unlist(strsplit(Reviews_Raw$full_text[[k]],"[^a-zA-Z0-9]+"))
+
+   # 2.2 get the word vectors per review using predict()
+   embedding_review <- predict(model, tokenized_review, type = "embedding")
+
+   #2.3 compute mean across all words in the review 
+   posteriors_w2v[k,] = apply(embedding_review, 2, mean, na.rm=TRUE)
+}
+``` 
+
+Inspect posteriors.
+```{r, posteriors_w2v}
+#posterior probabilities per document by topic
+str(posteriors_w2v)
+posteriors_w2v[review=999,]
+```
+
+
+
+
+  
