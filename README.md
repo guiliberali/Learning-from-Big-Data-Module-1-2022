@@ -75,7 +75,6 @@ ASSIGNMENT MODULE 1
 
 .Assigment template in [PDF](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/assignment%201/Assignment_1_ERNANUMBER.pdf) and [R markdown](https://github.com/guiliberali/Learning-from-Big-Data-Module-1/blob/main/assignment%201/Assignment_1_ERNANUMBER.Rmd)
 
-.Rubric [PDF coming soon](.) 
-
+.Rubric - please download it from Canvas. 
  
 
