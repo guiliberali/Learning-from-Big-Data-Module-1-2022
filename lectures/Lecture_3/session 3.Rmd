@@ -132,7 +132,7 @@ Step 2 -  Construct variables from word embeddings
 ```{r, Construct variables}
 
 # TO DO: Use the other split of the data here  (say 50%) instead of the entire dataset
-posteriors_w2v = matrix(0, nc=TOT_TOPICS_WORD2VEC, nr=TOT_REVIEWS)
+all_embeddings = matrix(0, nc=TOT_TOPICS_WORD2VEC, nr=TOT_REVIEWS)
 for (k in 1:TOT_REVIEWS )
 {
    # 2.1 get a review  and tokenize it - identify the words, separately
@@ -142,15 +142,15 @@ for (k in 1:TOT_REVIEWS )
    embedding_review <- predict(model, tokenized_review, type = "embedding")
 
    #2.3 compute mean across all words in the review 
-   posteriors_w2v[k,] = apply(embedding_review, 2, mean, na.rm=TRUE)
+   all_embeddings[k,] = apply(embedding_review, 2, mean, na.rm=TRUE)
 }
 ``` 
 
-Inspect posteriors.
-```{r, posteriors_w2v}
+Inspect embeddings
+```{r, all_embeddings}
 # word embeddings per document by topic (these are not probabilities)
-str(posteriors_w2v)
-posteriors_w2v[review=999,]
+str(all_embeddings)
+all_embeddings[review=999,]
 ```
 
 
