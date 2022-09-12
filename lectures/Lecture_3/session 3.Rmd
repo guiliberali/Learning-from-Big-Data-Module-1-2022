@@ -12,7 +12,7 @@ header-includes:
 
 ---
 # Introduction
-This file illustrates LDA and word2vec using the review data.
+This file illustrates LDA and word2vec using the review data. Updated on 12 September at 10am.
 
 
 # 1.  Loading libraries
@@ -33,7 +33,7 @@ pacman::p_load(tm, openNLP, nnet, dplyr, tidyr, ggplot2, reshape2,
 # Load the review data. Note that we are now using the fileEncoding parameter when
 #      calling read.csv() - this helps reading the review text correctly for further 
 #      processing (by correctly interpreting the non-ASCII symbols)
-Reviews_Raw <- read.csv('../data/reviews/Reviews_tiny.csv', fileEncoding="ISO-8859-1") 
+Reviews_Raw <- read.csv('../../data/reviews/Reviews_tiny.csv', fileEncoding="ISO-8859-1") 
 Reviews_Raw <- Reviews_Raw %>% 
                select(movie_name,review_code,	reviewer,	review_date, num_eval,
                       prob_sentiment,words_in_lexicon_sentiment_and_review, ratio_helpful,	
@@ -45,7 +45,7 @@ TOT_REVIEWS = length(Reviews_Raw[,1])
 
 
 # TO DO - replace here these fake likelihoods with your own content likelihood file
-likelihoods <- read.csv2("../data/likelihoods/example_100_fake_likelihood_topic.csv", 
+likelihoods <- read.csv2("../../data/lexicons/example_100_fake_likelihood_topic.csv", 
                          header=TRUE, sep = ",",quote="\"",dec=".",fill=FALSE)[,1:4]
 ```
 
@@ -93,7 +93,7 @@ Next, we will run the LDA and save the model. The model produced by LDA() is an 
 ```{r, Computing LDA}
 #Create an LDA model using GIBBS sampling
 model_lda = LDA(dtm, k, method = "Gibbs", control = list(seed = SEED, burnin = BURNIN, iter = ITER) , mc.cores = 4)
-save(model_lda , file = paste("../output/LDA_model_" ,k,".RData" ,sep="")) 
+save(model_lda , file = paste("../../output/LDA_model_" ,k,".RData" ,sep="")) 
 ```
 
 Inspect posteriors.
@@ -104,7 +104,7 @@ str(posteriors_lda)
 posteriors_lda[review=999,]
 ```
 
-Tip: for the data splits, mind the time. Best to train on a split that temporarily precedes the prediction split 
+Tip: for the data splits, if you can, mind the time. Best to train on a split that temporarily precedes the prediction split but sometimes that is not viable. Good to be aware anyhow.
 
   
 # 4. Unsupervised Learning:  word embeddings  
@@ -148,7 +148,7 @@ for (k in 1:TOT_REVIEWS )
 
 Inspect posteriors.
 ```{r, posteriors_w2v}
-#posterior probabilities per document by topic
+# word embeddings per document by topic (these are not probabilities)
 str(posteriors_w2v)
 posteriors_w2v[review=999,]
 ```
