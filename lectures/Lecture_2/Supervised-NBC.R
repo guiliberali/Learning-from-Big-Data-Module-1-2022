@@ -238,7 +238,7 @@ ground_truth_judges <-read.csv("./Big-Data-Module-1/data/judges/judges.csv")
 
 # TO DO:  Compare the performance of your NBC implementation (for content) against the judges ground truth 
 #         by running your algorithm on the sentences labeled by the judges and comparing your classification
-#         against the ground truth. Provide the confusion matrix, the model precison and the accuracy score. 
+#         against the ground truth. Provide the confusion matrix, the model precision and the accuracy score. 
 #         Do not forget to interpret your findings.
  
 #---------------------------

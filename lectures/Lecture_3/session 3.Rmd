@@ -77,7 +77,7 @@ str(dtm)
 ```
 
 
-Next, we will set the LDA parameters. k is the number of topics we ask LDA to estimate. In supervised learning, we set that to 3. In this example, we arbitrarily set k at 10. Seed is for replicability (i.e., obtain the same random number every time the code is run). Burn-in and number of iterations are for convergence of the Markov chains in the Gibbs sampler (ask me for details if you want them - MCMC-based inference is outside of the scope of this course and not required for the assignment - just use the default values below.) In the unlikely case you have warnings re: not convergence, you can increase ITER to 2k or 4k.
+Next, we will set the LDA parameters. k is the number of topics we ask LDA to estimate. In supervised learning, we set that to 3. In this example, we arbitrarily set k at 10. Seed is for replicability (i.e., obtain the same random number every time the code is run). Burn-in and number of iterations are for convergence of the Markov chains in the Gibbs sampler (ask me for details if you want them - MCMC-based inference is outside of the scope of this course and not required for the assignment - just use the default values below.) In the unlikely case you have warnings re: not convergence, you can increase ITER to 2000 or 4000.
 
 
 ```{r, LDA parameters}
@@ -109,7 +109,7 @@ Tip: for the data splits, if you can, mind the time. Best to train on a split th
   
 # 4. Unsupervised Learning:  word embeddings  
 
-Our word embedding example has three steps. First, run word2vec to train a model using the training data split. Second, it uses the trained model to analyze the prediction data split. Third, it uses the constructed variables to forecast box office.
+Our word embedding example has three steps. First, it runs word2vec to train a model using the training data split. Second, it uses the trained model to analyze the prediction data split. Third, it uses the constructed variables to forecast box office.
 
 
 Step 1 - Training Step
